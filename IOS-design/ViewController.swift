@@ -21,7 +21,7 @@ class ViewController: UIViewController {
             print("Successfully details entered")
         }
     }
-    func presentSimpleAlert(title: String = "IOS App", message: String) {
+    func presentSimpleAlert(title: String = "Login", message: String) {
             let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
 
             alertController.addAction(UIAlertAction(title: "OK", style: .default))

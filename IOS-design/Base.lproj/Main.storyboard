@@ -17,18 +17,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter username" textAlignment="center" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" minimumFontSize="25" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="dnH-sh-aQa" customClass="vi" colorLabel="IBBuiltInLabel-Red">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter username" textAlignment="center" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" minimumFontSize="25" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="dnH-sh-aQa" customClass="vi" colorLabel="IBBuiltInLabel-Red">
                                 <rect key="frame" x="49" y="358" width="332" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="00D-El-hjA"/>
+                                </constraints>
                                 <color key="textColor" systemColor="systemPinkColor"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <textInputTraits key="textInputTraits" textContentType="username"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGe-4K-hwI">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGe-4K-hwI">
                                 <rect key="frame" x="49" y="591" width="332" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="7Zz-Ix-7Ud"/>
+                                </constraints>
                                 <buttonConfiguration key="configuration" style="plain" title="Login">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
                                     <color key="baseForegroundColor" systemColor="systemPinkColor"/>
@@ -37,19 +41,23 @@
                                     <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fkz-nC-QrL"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter Password" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="27" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="VSf-iD-Blh">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter Password" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="27" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="VSf-iD-Blh">
                                 <rect key="frame" x="49" y="474" width="332" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" systemColor="systemBlueColor"/>
                                 <rect key="contentStretch" x="0.34999999999999998" y="0.20000000000000001" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="Q1c-kd-sxf"/>
+                                </constraints>
                                 <color key="textColor" name="AccentColor"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="figure.child.and.lock" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="c8Q-09-0Jv">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="figure.child.and.lock" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="c8Q-09-0Jv">
                                 <rect key="frame" x="136" y="208" width="157" height="103"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="102.33" id="Aqa-ZX-5RC"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY" colorLabel="IBBuiltInLabel-Yellow"/>
@@ -59,6 +67,20 @@
                             <accessibilityTraits key="traits" button="YES" staticText="YES"/>
                             <bool key="isElement" value="NO"/>
                         </accessibility>
+                        <constraints>
+                            <constraint firstItem="c8Q-09-0Jv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="137" id="0CT-3z-b9L"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dnH-sh-aQa" secondAttribute="trailing" constant="49" id="1eK-q5-GZd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c8Q-09-0Jv" secondAttribute="trailing" constant="137" id="42v-uK-QuY"/>
+                            <constraint firstItem="dnH-sh-aQa" firstAttribute="top" secondItem="c8Q-09-0Jv" secondAttribute="bottom" constant="48.666666666666686" id="8eL-fS-U8a"/>
+                            <constraint firstItem="VSf-iD-Blh" firstAttribute="top" secondItem="dnH-sh-aQa" secondAttribute="bottom" constant="48" id="9bn-mT-GfT"/>
+                            <constraint firstItem="VSf-iD-Blh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="Ye4-Mu-1h3"/>
+                            <constraint firstItem="dnH-sh-aQa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="bCk-W0-A0a"/>
+                            <constraint firstItem="c8Q-09-0Jv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="104" id="lXh-pN-zGq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xGe-4K-hwI" secondAttribute="trailing" constant="49" id="nAd-LW-CJR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VSf-iD-Blh" secondAttribute="trailing" constant="49" id="np7-fT-TTt"/>
+                            <constraint firstItem="xGe-4K-hwI" firstAttribute="top" secondItem="VSf-iD-Blh" secondAttribute="bottom" constant="49" id="pGC-eh-ads"/>
+                            <constraint firstItem="xGe-4K-hwI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="rRJ-SA-BsR"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="HuK-WP-mJZ"/>
                     <connections>
@@ -98,10 +120,10 @@
             <color white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tableBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
