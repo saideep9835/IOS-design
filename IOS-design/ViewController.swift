@@ -14,10 +14,12 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var password: UITextField!
     @IBAction func login(_ sender: UIButton) {
-        if (username.text?.isEmpty ?? true) || (password.text?.isEmpty ?? true){
+        if (username.text?.isEmpty ?? true) && (password.text?.isEmpty ?? true){
             print("Please enter missing details")
             self.presentSimpleAlert(message: "Please enter username and password.")
         }else{
+            guard let nextPageTabBar = self.storyboard?.instantiateViewController(withIdentifier: "TabbarView") else { return  }
+            self.navigationController?.pushViewController(nextPageTabBar, animated: true)
             print("Successfully details entered")
         }
     }

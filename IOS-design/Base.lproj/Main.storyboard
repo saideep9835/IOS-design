@@ -23,8 +23,8 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="68" id="00D-El-hjA"/>
                                 </constraints>
-                                <color key="textColor" systemColor="systemPinkColor"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <textInputTraits key="textInputTraits" textContentType="username"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGe-4K-hwI">
@@ -34,7 +34,7 @@
                                     <constraint firstAttribute="height" constant="68" id="7Zz-Ix-7Ud"/>
                                 </constraints>
                                 <buttonConfiguration key="configuration" style="plain" title="Login">
-                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
                                     <color key="baseForegroundColor" systemColor="systemPinkColor"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -48,8 +48,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="68" id="Q1c-kd-sxf"/>
                                 </constraints>
-                                <color key="textColor" name="AccentColor"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="figure.child.and.lock" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="c8Q-09-0Jv">
@@ -92,6 +91,82 @@
             </objects>
             <point key="canvasLocation" x="1018.6046511627907" y="3.8626609442060089"/>
         </scene>
+        <!--Colors-->
+        <scene sceneID="SzO-rq-Elp">
+            <objects>
+                <viewController storyboardIdentifier="color" id="VcB-vd-O9s" customClass="Tabbar" customModule="IOS_design" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HFh-ec-0Lb">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="00T-o8-eEk">
+                                <rect key="frame" x="0.0" y="59" width="430" height="790"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="color" id="64L-AO-BsF">
+                                        <rect key="frame" x="0.0" y="50" width="430" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="64L-AO-BsF" id="OjS-zc-ifz">
+                                            <rect key="frame" x="0.0" y="0.0" width="430" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Nco-FY-dnG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="00T-o8-eEk" firstAttribute="top" secondItem="Nco-FY-dnG" secondAttribute="top" id="0pp-i3-wse"/>
+                            <constraint firstItem="Nco-FY-dnG" firstAttribute="trailing" secondItem="00T-o8-eEk" secondAttribute="trailing" id="efa-sT-WZQ"/>
+                            <constraint firstItem="00T-o8-eEk" firstAttribute="leading" secondItem="Nco-FY-dnG" secondAttribute="leading" id="swy-73-rcN"/>
+                            <constraint firstItem="Nco-FY-dnG" firstAttribute="bottom" secondItem="00T-o8-eEk" secondAttribute="bottom" id="u1k-Xv-daQ"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Colors" selectedImage="coloncurrencysign" catalog="system" id="2zR-Zc-Lb2"/>
+                    <connections>
+                        <outlet property="colorTable" destination="00T-o8-eEk" id="wYh-iN-5oi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dxX-35-Xfg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1443" y="792"/>
+        </scene>
+        <!--Upload-->
+        <scene sceneID="6Al-C0-cIc">
+            <objects>
+                <viewController id="s45-Ux-Qcf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8kV-1X-8sg">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="2ay-2M-8er"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Upload" selectedImage="square.and.arrow.up.fill" catalog="system" id="qDg-kA-Et5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BFw-pd-QMK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2269" y="792"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="JQp-nR-oTn">
+            <objects>
+                <tabBarController storyboardIdentifier="TabbarView" id="R9C-M8-W4K" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="X17-xS-w3w">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" systemColor="systemPinkColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="VcB-vd-O9s" kind="relationship" relationship="viewControllers" id="N6x-w7-6mu"/>
+                        <segue destination="s45-Ux-Qcf" kind="relationship" relationship="viewControllers" id="s4B-JL-FB1"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gEP-YM-kAY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1753" y="4"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="JXR-A3-DzZ">
             <objects>
@@ -112,12 +187,17 @@
         </scene>
     </scenes>
     <resources>
+        <image name="coloncurrencysign" catalog="system" width="94" height="128"/>
         <image name="figure.child.and.lock" catalog="system" width="117" height="128"/>
+        <image name="square.and.arrow.up.fill" catalog="system" width="115" height="128"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="lightTextColor">
             <color white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
